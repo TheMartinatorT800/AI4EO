@@ -15,7 +15,7 @@ Discrimination of Sea ice and lead based on altimetry data classification based 
 <br> 
 <br> 
 
-In the following sections, This repository will guide you through the necessary steps to identify and align these datasets using pythoon coding and prepared files.
+In the following sections, This repository will guide you through the necessary steps to identify and align these datasets using python coding and prepared files.
 
 Week 4 Materials are available [here](https://drive.google.com/drive/folders/1SxmGM9_UJk-M5bEOoTfM_4urvr0257H3?usp=share_link). You will need to have downloaded the files in the Week 4 folder and uploaded your downloaded copy to your own [Google Drive](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://drive.google.com/drive/my-drive&ved=2ahUKEwic04qdhNGLAxVua0EAHdDsMNgQFnoECAgQAQ&usg=AOvVaw0bjlhvpcnM18wWebxM6XFA) to execute the code in this repository
 
