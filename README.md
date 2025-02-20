@@ -86,6 +86,14 @@ plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
 plt.show()
 ```
 
+<p align="center">
+  <img src="KmeansClustering.png" alt="Kmeans Clustering" />
+</p>
+
+<p align="center">
+  Which shoud display a graph like this one
+</p>
+
 <br> 
 
 # Gaussian Mixture Models (GMM)
@@ -122,6 +130,14 @@ plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
 plt.title('Gaussian Mixture Model')
 plt.show()
 ```
+<p align="center">
+  <img src="GaussianMixtureModel.png" alt="Gaussian Mixture Model" />
+</p>
+
+<p align="center">
+  Which shoud display a graph like this one
+</p>
+
 <br> 
 
 # Image Classification
@@ -179,6 +195,12 @@ plt.show()
 del kmeans, labels, band_data, band_stack, valid_data_mask, X, labels_image
 ```
 
+<p align="center">
+  <img src="KmeansImplementation.png" alt="Kmeans Implementation" />
+</p>
+
+Which should display this graph
+
 <br> 
 
 ## GMM Implementation
@@ -228,6 +250,11 @@ plt.title('GMM clustering on Sentinel-2 Bands')
 plt.colorbar(label='Cluster Label')
 plt.show()
 ```
+<p align="center">
+  <img src="GMMImplementation.png" alt="GMM Implementation" />
+</p>
+
+Which will display a graph like this one
 
 <br> 
 
@@ -545,23 +572,38 @@ plt.fill_between(range(len(mean_lead)), mean_lead - std_lead, mean_lead + std_le
 plt.title('Plot of mean and standard deviation for each class')
 plt.legend()
 ```
+<p align="center">
+  <img src="MeanWavelenthClasses.png" alt="Mean Wavelength Classes" />
+</p>
+
 ```python
 x = np.stack([np.arange(1,waves_cleaned.shape[1]+1)]*waves_cleaned.shape[0])
 plt.plot(x,waves_cleaned)  # plot of all the echos
 plt.show()
 ```
+<p align="center">
+  <img src="BeforeLeadCluster.png" alt="Before Lead Cluster" />
+</p>
+
 ```python
 # plot echos for the lead cluster
 x = np.stack([np.arange(1,waves_cleaned[clusters_gmm==1].shape[1]+1)]*waves_cleaned[clusters_gmm==1].shape[0])
 plt.plot(x,waves_cleaned[clusters_gmm==1])  # plot of all the echos
 plt.show()
 ```
+<p align="center">
+  <img src="EchoesForLeadCluster.png" alt="Echoes For Lead Cluster" />
+</p>
+
 ```python
 # plot echos for the sea ice cluster
 x = np.stack([np.arange(1,waves_cleaned[clusters_gmm==0].shape[1]+1)]*waves_cleaned[clusters_gmm==0].shape[0])
 plt.plot(x,waves_cleaned[clusters_gmm==0])  # plot of all the echos
 plt.show()
 ```
+<p align="center">
+  <img src="EchoesForSeaIceCluster.png" alt="Echoes For Sea Ice Cluster" />
+</p>
 
 <br> 
 
@@ -582,6 +624,12 @@ plt.scatter(data_cleaned[:,1],data_cleaned[:,2],c=clusters_gmm)
 plt.xlabel("PP")
 plt.ylabel("SSD")
 ```
+<p align="center">
+  <img src="ScatterPlotsOfDataP1.png" alt="Scatter Plots Of Data Part 1" />
+</p>
+<p align="center">
+  <img src="ScatterPlotsOfDataP2.png" alt="Scatter Plots Of Data Part 2" />
+</p>
 
 <br> 
 
@@ -609,6 +657,7 @@ for aligned_wave in aligned_waves:
  
 plt.title('Plot of 10 equally spaced functions where clusters_gmm = 0 (aligned)')
 ```
+![Kmeans Clustering](CrossCorrelation.png)
 
 <br>
 
@@ -641,6 +690,8 @@ print(class_report)
 ```
 
 Ultimately, after running the full code on Google Colab, you will have your echo classification against the ESA official classification using a confusion matrix
+
+![Kmeans Clustering](ESAMatricComparison.png)
 
 
 
