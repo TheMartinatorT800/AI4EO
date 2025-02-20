@@ -1,8 +1,32 @@
 git clone https://github.com/TheMartinatorT800/AI4EO.git
 cd AI4EO
 
-mkdir images
-mv path/to/your/images/* images/
+mkdir -p Images
+mv BeforeLeadCluster.png Images/
+
+mv CrossCorrelation.png Images/
+
+mv ESAMatricComparison.png Images/
+
+mv EchoesForLeadCluster.png Images/
+
+mv EchoesForSeaIceCluster.png Images/
+
+mv GMMImplementation.png Images/
+
+mv GaussianMixtureModel.png Images/
+
+mv KmeansClustering.png Images/
+
+mv KmeansImplementation.png Images/
+
+mv MeanWavelenthClasses.png Images/
+
+mv ScatterPlotsOfDataP1.png Images/
+
+mv ScatterPlotsOfDataP2.png Images/
+
+mv ScatterPlotsOfDataP3.png Images/
 
 git add .
 
