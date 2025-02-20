@@ -87,7 +87,7 @@ plt.show()
 ```
 
 <p align="center">
-  <img src="KmeansClustering.png" alt="Kmeans Clustering" />
+  <img src="Images/KmeansClustering.png" alt="Kmeans Clustering" />
 </p>
 
 <p align="center">
@@ -131,7 +131,7 @@ plt.title('Gaussian Mixture Model')
 plt.show()
 ```
 <p align="center">
-  <img src="GaussianMixtureModel.png" alt="Gaussian Mixture Model" />
+  <img src="Images/GaussianMixtureModel.png" alt="Gaussian Mixture Model" />
 </p>
 
 <p align="center">
@@ -196,7 +196,7 @@ del kmeans, labels, band_data, band_stack, valid_data_mask, X, labels_image
 ```
 
 <p align="center">
-  <img src="KmeansImplementation.png" alt="Kmeans Implementation" />
+  <img src="Images/KmeansImplementation.png" alt="Kmeans Implementation" />
 </p>
 
 <p align="center">
@@ -253,7 +253,7 @@ plt.colorbar(label='Cluster Label')
 plt.show()
 ```
 <p align="center">
-  <img src="GMMImplementation.png" alt="GMM Implementation" />
+  <img src="Images/GMMImplementation.png" alt="GMM Implementation" />
 </p>
 
 <p align="center">
@@ -577,7 +577,7 @@ plt.title('Plot of mean and standard deviation for each class')
 plt.legend()
 ```
 <p align="center">
-  <img src="MeanWavelenthClasses.png" alt="Mean Wavelength Classes" />
+  <img src="Images/MeanWavelenthClasses.png" alt="Mean Wavelength Classes" />
 </p>
 
 ```python
@@ -586,7 +586,7 @@ plt.plot(x,waves_cleaned)  # plot of all the echos
 plt.show()
 ```
 <p align="center">
-  <img src="BeforeLeadCluster.png" alt="Before Lead Cluster" />
+  <img src="Images/BeforeLeadCluster.png" alt="Before Lead Cluster" />
 </p>
 
 ```python
@@ -596,7 +596,7 @@ plt.plot(x,waves_cleaned[clusters_gmm==1])  # plot of all the echos
 plt.show()
 ```
 <p align="center">
-  <img src="EchoesForLeadCluster.png" alt="Echoes For Lead Cluster" />
+  <img src="Images/EchoesForLeadCluster.png" alt="Echoes For Lead Cluster" />
 </p>
 
 ```python
@@ -606,7 +606,7 @@ plt.plot(x,waves_cleaned[clusters_gmm==0])  # plot of all the echos
 plt.show()
 ```
 <p align="center">
-  <img src="EchoesForSeaIceCluster.png" alt="Echoes For Sea Ice Cluster" />
+  <img src="Images/EchoesForSeaIceCluster.png" alt="Echoes For Sea Ice Cluster" />
 </p>
 
 <br> 
@@ -629,15 +629,15 @@ plt.xlabel("PP")
 plt.ylabel("SSD")
 ```
 <p align="center">
-  <img src="ScatterPlotsOfDataP1.png" alt="Scatter Plots Of Data Part 1" />
+  <img src="Images/ScatterPlotsOfDataP1.png" alt="Scatter Plots Of Data Part 1" />
 </p>
 
 <p align="center">
-  <img src="ScatterPlotsOfDataP3.png" alt="Scatter Plots Of Data Part 3" />
+  <img src="Images/ScatterPlotsOfDataP3.png" alt="Scatter Plots Of Data Part 3" />
 </p>
 
 <p align="center">
-  <img src="ScatterPlotsOfDataP2.png" alt="Scatter Plots Of Data Part 2" />
+  <img src="Images/ScatterPlotsOfDataP2.png" alt="Scatter Plots Of Data Part 2" />
 </p>
 
 <br> 
@@ -667,7 +667,7 @@ for aligned_wave in aligned_waves:
 plt.title('Plot of 10 equally spaced functions where clusters_gmm = 0 (aligned)')
 ```
 <p align="center">
-  <img src="CrossCorrelation.png" alt="Cross Correlation" />
+  <img src="Images/CrossCorrelation.png" alt="Cross Correlation" />
 </p>
 
 <br>
@@ -703,7 +703,7 @@ print(class_report)
 Ultimately, after running the full code on Google Colab, you will have your echo classification against the ESA official classification using a confusion matrix
 
 <p align="center">
-  <img src="ESAMatricComparison.png" alt="ESA Matric Comparison" />
+  <img src="Images/ESAMatricComparison.png" alt="ESA Matric Comparison" />
 </p>
 
 
