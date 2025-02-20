@@ -593,6 +593,10 @@ plt.show()
   <img src="Images/BeforeLeadCluster.png" alt="Before Lead Cluster" />
 </p>
 
+<p align="center">
+The resulting image displays a plot of all echoes in the dataset, showing waveform variations across samples, with a central peak indicating the most frequent signal intensities.
+</p>
+
 ```python
 # plot echos for the lead cluster
 x = np.stack([np.arange(1,waves_cleaned[clusters_gmm==1].shape[1]+1)]*waves_cleaned[clusters_gmm==1].shape[0])
@@ -603,6 +607,10 @@ plt.show()
   <img src="Images/EchoesForLeadCluster.png" alt="Echoes For Lead Cluster" />
 </p>
 
+<p align="center">
+The resulting image presents a plot of all echoes for the lead cluster, showing waveform variations among samples, with a pronounced central peak representing the most frequent signal intensities.
+</p>
+
 ```python
 # plot echos for the sea ice cluster
 x = np.stack([np.arange(1,waves_cleaned[clusters_gmm==0].shape[1]+1)]*waves_cleaned[clusters_gmm==0].shape[0])
@@ -611,6 +619,10 @@ plt.show()
 ```
 <p align="center">
   <img src="Images/EchoesForSeaIceCluster.png" alt="Echoes For Sea Ice Cluster" />
+</p>
+
+<p align="center">
+The resulting image displays a plot of all echoes for the sea ice cluster, showing a broader waveform distribution with more variability compared to the lead cluster, indicating complex surface reflections.
 </p>
 
 <br> 
@@ -637,11 +649,23 @@ plt.ylabel("SSD")
 </p>
 
 <p align="center">
+First graph (sig_0 vs. PP): The scatter plot shows two well-separated clusters, indicating a strong relationship between sig_0 and PP, where the clusters are clearly distinguished along the vertical axis.
+</p>
+
+<p align="center">
   <img src="Images/ScatterPlotsOfDataP3.png" alt="Scatter Plots Of Data Part 3" />
 </p>
 
 <p align="center">
+Second graph (sig_0 vs. SSD): The scatter plot reveals an inverse relationship between sig_0 and SSD, with distinct clustering, suggesting that SSD values decrease as sig_0 increases.
+</p>
+
+<p align="center">
   <img src="Images/ScatterPlotsOfDataP2.png" alt="Scatter Plots Of Data Part 2" />
+</p>
+
+<p align="center">
+Third graph (PP vs. SSD): The scatter plot highlights two compact clusters, with PP and SSD showing a distinct separation, reinforcing the clustering structure observed in the previous plots.
 </p>
 
 <br> 
@@ -672,6 +696,10 @@ plt.title('Plot of 10 equally spaced functions where clusters_gmm = 0 (aligned)'
 ```
 <p align="center">
   <img src="Images/CrossCorrelation.png" alt="Cross Correlation" />
+</p>
+
+<p align="center">
+The resulting image presents aligned waveforms for the sea ice cluster (clusters_gmm = 0) using cross-correlation, showing a strong peak around a common reference point, improving waveform comparability.
 </p>
 
 <br>
@@ -710,8 +738,9 @@ Ultimately, after running the full code on Google Colab, you will have your echo
   <img src="Images/ESAMatricComparison.png" alt="ESA Matric Comparison" />
 </p>
 
-
-
+<p align="center">
+The model achieves near-perfect accuracy (100%), with minimal misclassification and F1-scores of 1.00 (sea ice) and 0.99 (lead), confirming the effectiveness of the Gaussian Mixture Model (GMM) in aligning with ESA data.
+</p>
 
 
 
