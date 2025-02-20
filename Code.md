@@ -199,7 +199,9 @@ del kmeans, labels, band_data, band_stack, valid_data_mask, X, labels_image
   <img src="KmeansImplementation.png" alt="Kmeans Implementation" />
 </p>
 
-Which should display this graph
+<p align="center">
+The image displays the results of K-means clustering applied to Sentinel-2 satellite bands, segmenting the data into distinct clusters based on spectral information.
+</p>
 
 <br> 
 
@@ -254,7 +256,9 @@ plt.show()
   <img src="GMMImplementation.png" alt="GMM Implementation" />
 </p>
 
-Which will display a graph like this one
+<p align="center">
+The image presents the results of Gaussian Mixture Model (GMM) clustering applied to Sentinel-2 satellite bands, capturing more nuanced variations in spectral data compared to K-means clustering.
+</p>
 
 <br> 
 
