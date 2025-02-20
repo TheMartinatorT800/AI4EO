@@ -1,0 +1,11 @@
+git clone https://github.com/TheMartinatorT800/AI4EO.git
+cd AI4EO
+
+mkdir images
+mv path/to/your/images/* images/
+
+git add .
+
+git commit -m "Group images in a folder"
+
+git push origin main
