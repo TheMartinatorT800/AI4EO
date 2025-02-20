@@ -1,115 +1,87 @@
 # Unsupervised Learning
 
-<br> 
+<br>
 
-## Introduction
+## Overview
 
-Applying machine learning models to full-sized images presents unique challenges, particularly in segmentation, classification, and object detection. This project provides a structured approach to deploying trained models such as Convolutional Neural Networks, Vision Transformers, and Random Forest classifiers on entire images or specific regions.
+Unsupervised learning represents a fundamental approach in machine learning and artificial intelligence. Unlike supervised learning, which relies on labeled data, unsupervised learning identifies patterns and structures within data without predefined labels. This repository provides a practical guide to applying unsupervised learning techniques, particularly in the context of Earth Observation (EO) applications.
 
-By leveraging deep learning and traditional machine learning techniques, this project enables efficient image processing for applications such as environmental monitoring, medical imaging, and remote sensing. The workflow includes preprocessing and data preparation, model loading and inference, full image rollout, and region-based processing.
+Unsupervised learning techniques excel in classification tasks where predefined categories are unavailable. By employing these methods, it is possible to uncover patterns, clusters, and structures within datasets. This repository focuses on classification tasks related to Earth Observation data, specifically:
 
-<br> 
+* Discrimination of sea ice and leads using Sentinel-2 optical data.
 
-## Introduction to K-means Clustering
+* Discrimination of sea ice and leads using Sentinel-3 altimetry data.
 
-K-means clustering is a widely used unsupervised learning algorithm for partitioning data into distinct groups. The number of clusters (k) is pre-defined, and the algorithm assigns each data point to the nearest centroid.
+<br>
 
-<br> 
+## Objectives
 
-**Key Components of K-means**
+* Apply unsupervised learning techniques to classify satellite imagery data.
 
-Choosing K: The number of clusters must be specified before running the algorithm.
+* Identify patterns and structures within unlabeled Earth Observation data.
 
-Centroid Initialization: The algorithm starts with initial centroids that may affect the final results.
+* Compare clustering results with official ESA product labels for validation.
 
-Assignment Step: Each data point is assigned to the nearest centroid.
+* Utilize K-means and Gaussian Mixture Models (GMM) for clustering and classification.
 
-Update Step: Centroids are adjusted based on the mean of assigned points.
+<br>
 
-This iterative process continues until the centroids stabilize, ensuring that within-cluster variation is minimized.
+## Key Features
 
-<br> 
+### K-means Clustering
 
-## Advantages of K-means
+K-means is a widely used unsupervised learning algorithm for partitioning data into distinct groups. The number of clusters (k) is pre-defined, and the algorithm assigns each data point to the nearest centroid.
 
-**Efficiency**: K-means is computationally efficient, making it suitable for large datasets.
+#### Advantages of K-means
 
-**Ease of Interpretation**: The clustering results are straightforward to analyze and understand.
+* **Efficiency**: Computationally efficient, suitable for large datasets.
 
-<br> 
+* **Ease of Interpretation**: Clustering results are straightforward to analyze.
 
-## Introduction to Gaussian Mixture Models (GMM)
+<br>
 
-Gaussian Mixture Models (GMM) represent data as a combination of multiple Gaussian distributions. Unlike K-means, which assigns each data point to a single cluster, GMM provides probabilistic cluster assignments.
+## Gaussian Mixture Models (GMM)
 
-<br> 
+GMM represents data as a combination of multiple Gaussian distributions, providing probabilistic cluster assignments instead of hard classifications.
 
-## Why Use Gaussian Mixture Models?
+### Advantages of GMM
 
-**Soft Clustering**: GMM offers a probability distribution for each data point rather than a hard assignment.
+* **Soft Clustering**: Assigns a probability score to each data point for multiple clusters.
 
-**Flexible Cluster Covariance**: Allows for clusters of different sizes and shapes.
+* **Flexible Cluster Covariance**: Captures different shapes and structures within the data.
 
-<br> 
+### Application to Earth Observation Data
 
-## Expectation-Maximization (EM) Algorithm in GMM
+#### Image Classification
 
-The EM algorithm refines the parameters of GMM iteratively:
+* **Sentinel-2 Optical Data**: Identify sea ice and leads using spectral bands.
 
-**Expectation Step (E-step)**: Computes the probability of each data point belonging to a cluster.
+* **Sentinel-3 Altimetry Data**: Use waveform features such as peakiness and stack standard deviation (SSD) to classify sea ice and leads.
 
-**Maximization Step (M-step)**: Updates the Gaussian parameters to maximize the likelihood of the data.
+<br>
 
-This iterative approach continues until the parameters converge to stable values.
+## Results
 
-<br> 
+### Comparison with ESA Data
 
-## Advantages of GMM
+To validate the clustering results, they can be compared against official ESA product labels, where sea ice is labeled as one class and leads as another. The comparison provides insight into the effectiveness of unsupervised learning techniques in correctly identifying surface types. Performance metrics such as accuracy, precision, recall, and F1-score can be used to assess the classification quality.
 
-**Soft Clustering**: Provides a probabilistic framework for data classification.
+A well-matched clustering result to ESA data strengthens confidence in the approach, while discrepancies highlight areas for further refinement. This comparison is crucial in determining the reliability of unsupervised methods for real-world applications in Earth Observation.
 
-**Cluster Shape Flexibility**: Adapts to various cluster structures.
+<br>
 
+### Key Results
 
+Unsupervised learning successfully identifies patterns in remote sensing data.
 
-Application to Image Classification
+K-means provides fast clustering but may struggle with non-spherical clusters.
 
-Classification of Sea Ice and Leads
+GMM offers greater flexibility in classification but requires more computational power.
 
-Unsupervised learning techniques can be applied to remote sensing images to classify sea ice and leads. Using data from Sentinel-2 and Sentinel-3, these techniques help identify patterns without labeled training data.
+Clustering results align closely with ESA data, validating the effectiveness of these methods.
 
-Preprocessing and Data Preparation
+<br>
 
-To ensure accurate classification, preprocessing steps such as noise reduction, normalization, and feature selection are essential. These steps enhance the reliability of the clustering results.
+## Conclusion
 
-K-means and GMM in Image Classification
-
-Both K-means and GMM can be applied to extract meaningful clusters from image data. The clustering results can be visualized using classification maps, aiding in the interpretation of the detected patterns.
-
-Altimetry Classification
-
-Sea Ice and Lead Classification Using Altimetry Data
-
-Unsupervised learning methods can also be applied to altimetry data to distinguish between sea ice and leads. Key features, such as peakiness and stack standard deviation (SSD), play a crucial role in classification.
-
-Feature Extraction
-
-Peakiness: Measures the sharpness of waveform peaks, helping to differentiate between surface types.
-
-Stack Standard Deviation (SSD): Represents variations in altimetry signals, aiding in classification.
-
-Clustering Techniques for Altimetry Data
-
-By applying K-means and GMM to extracted features, different surface types can be identified. These clustering results can be compared with official ESA product labels for validation.
-
-Comparison with ESA Data
-
-To validate the clustering results, they can be compared against official ESA product labels, where sea ice is labeled as one class and leads as another. The comparison provides insight into the effectiveness of unsupervised learning techniques in correctly identifying surface types. Performance metrics such as accuracy, precision, recall, and F1-score can be used to assess the classification quality. A well-matched clustering result to ESA data strengthens confidence in the approach, while discrepancies highlight areas for further refinement. This comparison is crucial in determining the reliability of unsupervised methods for real-world applications in Earth Observation.
-
-
-
-
-
-
-
-
+Unsupervised learning provides powerful tools for discovering patterns and structures within large datasets. By applying techniques such as K-means and Gaussian Mixture Models to Earth Observation data, meaningful classifications can be achieved without the need for labeled examples. These methods contribute to the broader goal of automating and enhancing data interpretation in remote sensing and environmental analysis.
