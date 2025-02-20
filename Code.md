@@ -580,6 +580,10 @@ plt.legend()
   <img src="Images/MeanWavelenthClasses.png" alt="Mean Wavelength Classes" />
 </p>
 
+<p align="center">
+The resultin image visualizes the mean waveform of two classes, “ice” and “lead,” with shaded regions representing the standard deviation, providing insight into the variability of the signal for each class.
+</p>
+
 ```python
 x = np.stack([np.arange(1,waves_cleaned.shape[1]+1)]*waves_cleaned.shape[0])
 plt.plot(x,waves_cleaned)  # plot of all the echos
