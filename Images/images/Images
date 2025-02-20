@@ -1,35 +1,7 @@
-git clone https://github.com/TheMartinatorT800/AI4EO.git
-cd AI4EO
+mkdir -p AI4EO/Images
 
-mkdir -p Images
-mv BeforeLeadCluster.png Images/
+mv AI4EO/BeforeLeadCluster.png AI4EO/Images/
 
-mv CrossCorrelation.png Images/
-
-mv ESAMatricComparison.png Images/
-
-mv EchoesForLeadCluster.png Images/
-
-mv EchoesForSeaIceCluster.png Images/
-
-mv GMMImplementation.png Images/
-
-mv GaussianMixtureModel.png Images/
-
-mv KmeansClustering.png Images/
-
-mv KmeansImplementation.png Images/
-
-mv MeanWavelenthClasses.png Images/
-
-mv ScatterPlotsOfDataP1.png Images/
-
-mv ScatterPlotsOfDataP2.png Images/
-
-mv ScatterPlotsOfDataP3.png Images/
-
-git add .
-
-git commit -m "Group images in a folder"
-
+git add AI4EO/Images/BeforeLeadCluster.png AI4EO/BeforeLeadCluster.png
+git commit -m "Move BeforeLeadCluster.png to Images folder"
 git push origin main
