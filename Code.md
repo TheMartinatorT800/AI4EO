@@ -91,7 +91,7 @@ plt.show()
 </p>
 
 <p align="center">
-  Which shoud display a graph like this one
+  The resulting image illustrates a Gaussian Mixture Model clustering applied to randomly generated data, with cluster centres marked in gray.
 </p>
 
 <br> 
