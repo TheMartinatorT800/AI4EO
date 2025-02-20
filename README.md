@@ -27,7 +27,7 @@ Week 4 Materials are available [here](https://drive.google.com/drive/folders/1Sx
 <br> 
 
 ### Mount Google Drive (if using Google Colab)
-If you're working in **Google Colab**, you will need to mount your Google Drive to access the necessary datasets. Run the following command:
+If you are working in **Google Colab**, you will need to mount your Google Drive to access the necessary datasets. Run the following command:
 
 ```python
 from google.colab import drive
