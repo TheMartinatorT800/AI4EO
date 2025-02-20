@@ -72,13 +72,13 @@ A well-matched clustering result to ESA data strengthens confidence in the appro
 
 ### Key Results
 
-Unsupervised learning successfully identifies patterns in remote sensing data.
+* Unsupervised learning successfully identifies patterns in remote sensing data.
 
-K-means provides fast clustering but may struggle with non-spherical clusters.
+* K-means provides fast clustering but may struggle with non-spherical clusters.
 
-GMM offers greater flexibility in classification but requires more computational power.
+* GMM offers greater flexibility in classification but requires more computational power.
 
-Clustering results align closely with ESA data, validating the effectiveness of these methods.
+* Clustering results align closely with ESA data, validating the effectiveness of these methods.
 
 <br>
 
