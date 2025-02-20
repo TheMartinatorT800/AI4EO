@@ -1,7 +1,0 @@
-mkdir -p AI4EO/Images
-
-mv AI4EO/BeforeLeadCluster.png AI4EO/Images/
-
-git add AI4EO/Images/BeforeLeadCluster.png AI4EO/BeforeLeadCluster.png
-git commit -m "Move BeforeLeadCluster.png to Images folder"
-git push origin main
