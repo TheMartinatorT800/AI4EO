@@ -627,6 +627,11 @@ plt.ylabel("SSD")
 <p align="center">
   <img src="ScatterPlotsOfDataP1.png" alt="Scatter Plots Of Data Part 1" />
 </p>
+
+<p align="center">
+  <img src="ScatterPlotsOfDataP3.png" alt="Scatter Plots Of Data Part 3" />
+</p>
+
 <p align="center">
   <img src="ScatterPlotsOfDataP2.png" alt="Scatter Plots Of Data Part 2" />
 </p>
@@ -657,7 +662,9 @@ for aligned_wave in aligned_waves:
  
 plt.title('Plot of 10 equally spaced functions where clusters_gmm = 0 (aligned)')
 ```
-![Kmeans Clustering](CrossCorrelation.png)
+<p align="center">
+  <img src="CrossCorrelation.png" alt="Cross Correlation" />
+</p>
 
 <br>
 
@@ -691,7 +698,9 @@ print(class_report)
 
 Ultimately, after running the full code on Google Colab, you will have your echo classification against the ESA official classification using a confusion matrix
 
-![Kmeans Clustering](ESAMatricComparison.png)
+<p align="center">
+  <img src="ESAMatricComparison.png" alt="ESA Matric Comparison" />
+</p>
 
 
 
