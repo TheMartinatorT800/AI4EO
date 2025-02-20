@@ -183,8 +183,6 @@ del kmeans, labels, band_data, band_stack, valid_data_mask, X, labels_image
 
 ## GMM Implementation
 
-<br> 
-
 You will need to secify your personal path to the files
 
 ```python
