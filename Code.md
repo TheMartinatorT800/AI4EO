@@ -135,7 +135,7 @@ plt.show()
 </p>
 
 <p align="center">
-  Which shoud display a graph like this one
+  The resulting image illustrates the application of a Gaussian Mixture Model (GMM) for clustering, showing three distinct clusters with their respective centres marked in gray.
 </p>
 
 <br> 
